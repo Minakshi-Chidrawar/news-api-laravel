@@ -2,12 +2,18 @@
 
 namespace App\Services;
 
+use App\Http\Clients\NewsClient;
 use Carbon\Carbon;
 use GuzzleHttp\Client;
 use Illuminate\Support\Collection;
 
 class NewsService
 {
+    /**
+     * @var NewsClient
+     */
+    private $client;
+
     public  function __construct(NewsClient $client)
     {
         $this->client = $client;
@@ -15,34 +21,16 @@ class NewsService
 
     public function headlines(): Collection
     {
-        //$client = new Client();
-        //$response = $client->get('https://newsapi.org/v2/top-headlines?country=us&apiKey=c1b17b191d364245a82513e7a6fff71d');
+        //dd(openssl_get_cert_locations());
 
-        $url = 'https://newsapi.org/v2/top-headlines?country=us&apiKey=c1b17b191d364245a82513e7a6fff71d';
-        try {
-            $client = $this->client(['verify' => false]);
-            $options = [
-                'http_errors'     => true,
-                'connect_timeout' => 3.14,
-                'read_timeout'    => 3.14,
-                'timeout'         => 3.14
-            ];
+        $response = $this->client->get('top-headlines?country=us');
 
-            $headers = [
-                'headers' => [
-                    'Keep-Alive' => 'timeout=300'
-                ]
-            ];
+        /*$client = new Client([ 'verify' => false ]);
+        $response = $client->get('https://newsapi.org/v2/top-headlines?country=us&apiKey=c1b17b191d364245a82513e7a6fff71d');*/
 
-            $response = $client->request('GET', $url, $headers, $options);
-        } catch (ConnectException $e) {
-            dd("error");
-        }
 
         //dd($response);
         $body = json_decode($response->getBody(), true);
-
-        //dd($body);
 
         return  collect($body['articles'])->map(function ($article) {
             return [
