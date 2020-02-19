@@ -19,23 +19,26 @@ class NewsService
         $this->client = $client;
     }
 
-    public function headlines(): Collection
+    public function allSources()
     {
-        //dd(openssl_get_cert_locations());
+        $response = $this->client->get('sources?');
 
-        $response = $this->client->get('top-headlines?country=us');
+        $allSources =  json_decode($response->getBody(), true);
 
-        /*$client = new Client([ 'verify' => false ]);
-        $response = $client->get('https://newsapi.org/v2/top-headlines?country=us&apiKey=c1b17b191d364245a82513e7a6fff71d');*/
+        return  $allSources['sources'];
+    }
 
+    public function headlines($source): Collection
+    {
+        $response = $this->client->get('articles?source='.$source);
 
-        //dd($response);
         $body = json_decode($response->getBody(), true);
 
         return  collect($body['articles'])->map(function ($article) {
             return [
                 'author' => $article['author'],
                 'title' => $article['title'],
+                'description' => $article['description'],
                 'url' => $article['url'],
                 'urlToImage' => $article['urlToImage'],
                 'publishedAt' => $article['publishedAt'] !== null
