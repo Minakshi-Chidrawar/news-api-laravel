@@ -18,6 +18,7 @@ class NewsServiceProvider extends ServiceProvider
             $config = $this->app->get('config')['news'];
 
             return new NewsClient([
+                'curl' => array( CURLOPT_SSL_VERIFYPEER => false, ),
                 'base_uri' => $config['base_uri'],
                 'headers' => [
                     'authorization' => $config['api_token']
