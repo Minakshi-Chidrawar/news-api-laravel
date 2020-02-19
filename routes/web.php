@@ -15,4 +15,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('news', 'NewsController')->name('news');
+Route::get('/', 'NewsController');
+Route::post('/{source}', 'NewsController');
