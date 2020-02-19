@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d2fb482-c392-4ca5-96aa-d553ae88e840" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../public/css/app.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/Http/Controllers/NewsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../app/Http/Controllers/NewsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/Providers/NewsServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/../app/Providers/NewsServiceProvider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../app/Services/NewsService.php" beforeDir="false" afterPath="$PROJECT_DIR$/../app/Services/NewsService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/../config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config/news.php" beforeDir="false" afterPath="$PROJECT_DIR$/../config/news.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../resources/views/news.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../resources/views/news.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/../routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +36,14 @@
     </option>
     <expand />
     <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -151,6 +166,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -159,6 +175,11 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Projects\New-Api-Laravel\public\css" />
+    </key>
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
@@ -205,7 +226,10 @@
       <workItem from="1581438321786" duration="2461000" />
       <workItem from="1581504693273" duration="3873000" />
       <workItem from="1581540752071" duration="682000" />
-      <workItem from="1581609310667" duration="16390000" />
+      <workItem from="1581609310667" duration="16878000" />
+      <workItem from="1581803907019" duration="60000" />
+      <workItem from="1581803979377" duration="40000" />
+      <workItem from="1582019185687" duration="31199000" />
     </task>
     <servers />
   </component>
@@ -217,6 +241,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="275" y="26" key="#Deployment/0.0.1366.738@0.0.1366.738" timestamp="1581453643494" />
+    <state x="273" y="30" key="#Inspections" timestamp="1582119610775">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="273" y="30" key="#Inspections/0.0.1366.738@0.0.1366.738" timestamp="1582119610775" />
     <state x="367" y="0" width="646" height="738" key="#NewsServiceTest.fetch_headlines" timestamp="1581715903061">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -233,25 +261,25 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="413" y="123" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.738@0.0.1366.738" timestamp="1581717748534" />
-    <state width="1323" height="182" key="GridCell.Tab.0.bottom" timestamp="1581716365135">
+    <state width="1323" height="182" key="GridCell.Tab.0.bottom" timestamp="1581719383710">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="182" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1581716365135" />
+    <state width="1323" height="182" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1581719383710" />
     <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050/-1920.0.1920.1050@-1920.0.1920.1050" timestamp="1581438397786" />
-    <state width="1323" height="182" key="GridCell.Tab.0.center" timestamp="1581716365135">
+    <state width="1323" height="182" key="GridCell.Tab.0.center" timestamp="1581719383710">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="182" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1581716365135" />
+    <state width="1323" height="182" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1581719383710" />
     <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050/-1920.0.1920.1050@-1920.0.1920.1050" timestamp="1581438397786" />
-    <state width="1323" height="182" key="GridCell.Tab.0.left" timestamp="1581716365135">
+    <state width="1323" height="182" key="GridCell.Tab.0.left" timestamp="1581719383710">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="182" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1581716365135" />
+    <state width="1323" height="182" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1581719383710" />
     <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050/-1920.0.1920.1050@-1920.0.1920.1050" timestamp="1581438397786" />
-    <state width="1323" height="182" key="GridCell.Tab.0.right" timestamp="1581716365135">
+    <state width="1323" height="182" key="GridCell.Tab.0.right" timestamp="1581719383710">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="182" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1581716365135" />
+    <state width="1323" height="182" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1581719383710" />
     <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050/-1920.0.1920.1050@-1920.0.1920.1050" timestamp="1581438397786" />
     <state x="499" y="238" key="NewPhpClassDialog" timestamp="1581717737913">
       <screen x="0" y="0" width="1366" height="738" />
@@ -263,12 +291,16 @@
     </state>
     <state x="566" y="314" key="NewPhpFileDialog/0.0.1366.738@0.0.1366.738" timestamp="1581718450776" />
     <state x="-1125" y="447" key="NewPhpFileDialog/0.0.1920.1050/-1920.0.1920.1050@-1920.0.1920.1050" timestamp="1581505551394" />
-    <state x="-1265" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1581609321661">
-      <screen x="-1920" y="0" width="1920" height="1050" />
+    <state x="466" y="244" key="com.intellij.ide.util.TipDialog" timestamp="1581803991952">
+      <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="466" y="244" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1581540757717" />
+    <state x="466" y="244" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1581803991952" />
     <state x="-1265" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1050/-1920.0.1920.1050@-1920.0.1920.1050" timestamp="1581609321661" />
     <state x="655" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1581504724097" />
+    <state x="378" y="0" width="606" height="738" key="find.popup" timestamp="1582108481990">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="378" y="0" width="606" height="738" key="find.popup/0.0.1366.738@0.0.1366.738" timestamp="1582108481990" />
     <state x="-1304" y="243" width="672" height="677" key="run.anything.popup" timestamp="1581438438449">
       <screen x="-1920" y="0" width="1920" height="1050" />
     </state>
