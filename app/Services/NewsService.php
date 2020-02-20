@@ -36,7 +36,7 @@ class NewsService
 
         return  collect($body['articles'])->map(function ($article) {
             return [
-                'author' => $article['author'],
+                'author' => $article['author'] ? : "Unknown",
                 'title' => $article['title'],
                 'description' => $article['description'],
                 'url' => $article['url'],
