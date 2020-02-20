@@ -1,0 +1,14 @@
+.navbarText {
+    margin-left: 3%;
+    font-family: 'Droid Sans Mono';
+    color: white;
+    font-size: 200%;
+}
+.newsSource {
+    font-family: 'Droid Sans Mono';
+    font-size: xx-large;
+}
+
+.cardBox {
+    box-shadow: 10px 5px 5px dimgrey;
+}
